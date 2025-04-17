@@ -88,6 +88,14 @@ def create_form_pdf(image_paths, output_filename):
             c.drawString(91.8 * mm, height - 238.7 * mm, "21-04-2021")  
             c.drawString(41.8 * mm, height - 252.7 * mm, "Indore")
             c.drawString(40.8 * mm, height - 257.7 * mm, "11-04-2021")
+            c.drawString(167.8 * mm, height - 148.7 * mm, "Answer") 
+            c.drawString(158.8 * mm, height - 159.7 * mm, "Answer") 
+            c.drawString(134.8 * mm, height - 163.7 * mm,"Answer") 
+            c.drawString(140.8 * mm, height - 168.7 * mm, "Answer") 
+            c.drawString(171.8 * mm, height - 172.7 * mm, "Answer") 
+            c.drawString(167.8 * mm, height - 181.7 * mm, "Answer") 
+            c.drawString(167.8 * mm, height - 195.7 * mm, "Answer") 
+            c.drawString(167.8 * mm, height - 217.7 * mm, "Answer") 
         if index == 2:
                number_str = "1417121089238497506782574490"
                c.setFont("Helvetica-Bold", 10)
@@ -122,12 +130,23 @@ def create_form_pdf(image_paths, output_filename):
                  (110 * mm, height - 140 * mm),  # digit 5
                  (130 * mm, height - 140 * mm), # digit 6
                  (160 * mm, height - 140 * mm), # digit 7
-
-
                 ]
                for digit, (x, y) in zip(number_str, digit_positions):
                 c.drawString(x, y, digit)
-                 
+         if index == 3:
+            c.setFont("Helvetica-Bold", 11)
+            c.setFillColorRGB(0, 0, 0)
+            
+            c.drawString(106.8 * mm, height - 66.7 * mm, "Answer") 
+            c.drawString(118.8 * mm, height - 71.7 * mm, "Answer") 
+            c.drawString(134.8 * mm, height - 75.7 * mm,"Answer") 
+            c.drawString(140.8 * mm, height - 88.7 * mm, "Answer") 
+            c.drawString(155.8 * mm, height - 99.7 * mm, "Answer") 
+            c.drawString(115.8 * mm, height - 120.7 * mm, "Answer") 
+            c.drawString(125.8 * mm, height - 136.7 * mm, "Answer") 
+            c.drawString(125.8 * mm, height - 141.7 * mm, "Answer")
+            c.drawString(125.8 * mm, height - 146.7 * mm, "Answer") 
+            c.drawString(125.8 * mm, height - 151.7 * mm, "Answer")              
                    
              
         c.showPage()  # Add this inside the loop
