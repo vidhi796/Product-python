@@ -130,10 +130,12 @@ def create_form_pdf(image_paths, output_filename):
                  (110 * mm, height - 140 * mm),  # digit 5
                  (130 * mm, height - 140 * mm), # digit 6
                  (160 * mm, height - 140 * mm), # digit 7
+
+
                 ]
                for digit, (x, y) in zip(number_str, digit_positions):
                 c.drawString(x, y, digit)
-         if index == 3:
+        if index == 3:
             c.setFont("Helvetica-Bold", 11)
             c.setFillColorRGB(0, 0, 0)
             
@@ -146,7 +148,7 @@ def create_form_pdf(image_paths, output_filename):
             c.drawString(125.8 * mm, height - 136.7 * mm, "Answer") 
             c.drawString(125.8 * mm, height - 141.7 * mm, "Answer")
             c.drawString(125.8 * mm, height - 146.7 * mm, "Answer") 
-            c.drawString(125.8 * mm, height - 151.7 * mm, "Answer")              
+            c.drawString(125.8 * mm, height - 151.7 * mm, "Answer")         
                    
              
         c.showPage()  # Add this inside the loop
@@ -161,6 +163,6 @@ if __name__ == "__main__":
         "01 Form-0003.jpg",
         "01 Form-0004.jpg"
     ]
-    create_form_pdf(image_paths, "form10.pdf")
+    create_form_pdf(image_paths, "form9.pdf")
 
 
